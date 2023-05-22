@@ -1,6 +1,7 @@
 const resultMessage = document.querySelector(".result-message");
 const computerChoiceDisplay = document.querySelector('.computer-choice');
 const possibleChoices = document.querySelectorAll('.btn');
+const resetButton = document.querySelector('.reset-btn');
 
 let yourScore = document.querySelector(".your-score");
 let computerScore = document.querySelector(".computer-score");
@@ -9,18 +10,29 @@ let userChoice;
 let yourPoints = 0;
 let computerPoints = 0;
 
+function resetScore() {
+    yourPoints = 0;
+    computerPoints = 0;
+    msg = "";
+    computerChoiceDisplay.innerHTML = "";
+    updateScore();
+}
+
+resetButton.addEventListener('click', resetScore);
+
 possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click', (e) => {
     userChoice = e.target.id;
     getComputerChoice();
     displayWinner();
-
-    if (yourPoints + computerPoints === 5) {
-        yourPoints = 0;
-        computerPoints = 0;
-    }
 }));
 
 // functions 
+function updateScore() {
+    resultMessage.innerHTML = msg;
+    yourScore.innerHTML = yourPoints;
+    computerScore.innerHTML = computerPoints;
+}
+
 function getComputerChoice() {
     const randomNumber = Math.floor(Math.random() * possibleChoices.length) + 1;
 
@@ -57,8 +69,5 @@ function displayWinner() {
         msg = 'You lost...';
         computerPoints++;
     }
-    resultMessage.innerHTML = msg;
-    yourScore.innerHTML = yourPoints;
-    computerScore.innerHTML = computerPoints;
+    updateScore();
 }
-

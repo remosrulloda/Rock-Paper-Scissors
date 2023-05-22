@@ -13,8 +13,15 @@
     <div class="content">
         <h1>Rock, Paper, Scissors</h1>
 
-        <h3 class="computer-choice"></h3>
-        <h3 class="result-message"></h3>
+        <div class="results">
+            <h3 class="computer-choice"></h3>
+            <h3 class="result-message"></h3>
+        </div>
+
+        <div class="score-labels">
+            <h2>Your Score</h2>
+            <h2>Computer's Score</h2>
+        </div>
 
         <div class="score-section">
             <h2 class="your-score">0</h2>
@@ -24,18 +31,25 @@
 
         <div class="choices">
             <div class="choice">
-                <button class="btn" id="rock"><img src="/img/rock.png" alt="rock" id="rock"></button>
+                <button class="btn" id="rock"><img src="/img/rock.png" alt="rock" id="rock" draggable="false"></button>
             </div>
 
             <div class="choice">
-                <button class="btn" id="paper"><img src="/img/paper.png" alt="paper" id="paper"></button>
+                <button class="btn" id="paper"><img src="/img/paper.png" alt="paper" id="paper"
+                        draggable="false"></button>
             </div>
 
             <div class="choice">
-                <button class="btn" id="scissors"><img src="/img/scissors.png" alt="scissors" id="scissors"></button>
+                <button class="btn" id="scissors"><img src="/img/scissors.png" alt="scissors" id="scissors"
+                        draggable="false"></button>
             </div>
         </div>
     </div>
+
+    <div class="reset">
+        <button class="reset-btn">Reset</button>
+    </div>
+
     <footer class="footer">
         <p>Copyright © 2023 remorulloda</p>
     </footer>
