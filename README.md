@@ -4,5 +4,6 @@
  Live Preview: https://tangerine-granita-218d88.netlify.app/
  
  
+ 
  ![rock-paper-scissors-demo](https://github.com/remosrulloda/Rock-Paper-Scissors/assets/50937757/25d36c36-b19d-4b05-9d5c-b19f5210c114)
 
