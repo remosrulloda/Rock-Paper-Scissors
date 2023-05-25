@@ -2,7 +2,7 @@
  
  A simple Rock paper scissors game created with HTML, CSS, and JS.
  
- Live Preview: [https://tangerine-granita-218d88.netlify.app/](https://remorulloda-rock-paper-scissors.netlify.app/)
+ Live Preview: https://remorulloda-rock-paper-scissors.netlify.app/
  
  
  
