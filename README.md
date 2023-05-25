@@ -1,5 +1,8 @@
 # Rock-Paper-Scissors
  
  A simple Rock paper scissors game created with HTML, CSS, and JS.
+ Live Preview: https://tangerine-granita-218d88.netlify.app/
  
- ![Screenshot 2023-04-15 at 1 56 43 PM](https://user-images.githubusercontent.com/50937757/232252818-eb6aa587-ae3d-4d92-a4e6-4ff6f3890dd7.png)
+ 
+ ![rock-paper-scissors-demo](https://github.com/remosrulloda/Rock-Paper-Scissors/assets/50937757/25d36c36-b19d-4b05-9d5c-b19f5210c114)
+
